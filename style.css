@@ -6,6 +6,7 @@
    padding: 0;
    font-family: sans-serif;
    background-color: black;
+   color: #ffffff;
 }
 
 body {
@@ -57,7 +58,7 @@ main * {
    color: #ffffff;
 }
 
-#other-page:hover {
+.other-page:hover {
    color: #d6d6d6;
 }
 
@@ -89,13 +90,25 @@ main * {
 }
 
 #content-container {
-   margin-top: 200px;  /* height of header (4.5rem) + 128px */
-   margin-bottom: 176px; /* height of footer (3rem) + 128px */
+   margin-top: 150px;  /* height of header (4.5rem) */
+   margin-bottom: 150px; /* height of footer (3rem) */
    width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+#product-image-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem;
+}
+
+#product-image {
+   height: 90%;
+   padding: 0.4rem;
 }
 
 footer{
@@ -111,269 +124,45 @@ footer{
    align-items: center; /* align items vertically */
 }
 
-#img-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-items: center;
-   align-items: center;
-   border-radius: 50%;
-   width: 200px;
-   height: 200px;
-   object-fit: cover;  /* maintain aspect ratio */
+#title {
+   font-size: 2.5rem;
+   color: #ffffff;
+   margin: 1rem;
    margin-bottom: 2rem;
 }
 
-#profile-pic {
+#co-founders {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem;
+}
+
+#profile {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+}
+
+#profile-image {
+   margin: 0.5rem;
+   display: inline;
+   height: 75%;
+   width: 75%;
+   /* make the image round */
    border-radius: 50%;
-   width: 200px;
-   height: 200px;
-   object-fit: cover;  /* maintain aspect ratio */
+   border-color: white;
 }
 
-.project-img {
-   padding-bottom: 0.5rem;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   align-content: flex-start;
-   object-fit: cover;  /* maintain aspect ratio */
+h2 {
+   margin: 0.5rem;
+   font-weight: 400;
 }
 
-.project-description {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-}
-
-#intro {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   font-weight: bold;
-   padding: 0.5rem;
-   padding-top: 0;
-
-}
-
-#about-paragraph {
-   padding: 0.5rem;
-   text-align: center;
-}
-
-p {
-   width: 100%;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-}
-
-#project-p {
-   padding: 0.5rem;
-   text-align: center;
-}
-
-#form-p {
-   font-weight: bold;
-   padding: 3rem 1.5rem 2rem 0.5rem;
-}
-
-#first-page-p{
-   width: 100%;
-   padding: 0.5rem;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-}
-
-.form-responsive {
-   display: flex;
-   flex-flow: column wrap;
-   align-items: center;
-   justify-items: left;
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
-   width: 100%;
-}
-
-ul {
-   padding: 0.5rem;
-   flex-direction: column;
-   align-items: center;
-   text-align: left;
-   justify-content: left;
-}
-#list {
-   padding: 0.5rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-
-li {
-   align-items: center;
-   text-align: left;
-   justify-content: center;
-}
-
-#schedule-table {
-   width: 100%;
-   padding: 0.5rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   overflow-x: scroll;
-}
-
-table {
-   border: 1px solid black;
-}
-
-th {
-   border: 1px solid black;
-   padding: 0.5rem;
-   text-align: center;
-   vertical-align: middle;
-}
-
-.first-col {
-   padding: 0.5rem;
-   text-align: center;
-   width: 110px;
-}
-
-td {
-   border: 1px solid black;
-   padding: 0.5rem;
-   text-align: center;
-   vertical-align: middle;
-}
-
-#project-cards {
-   padding: 0.5rem;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: space-evenly;
-}
-
-.card {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-around;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-   transition: 0.3s;
-   border-radius: 5px;
-   padding: 0.5rem;
-   width: 32%;
-}
-
-.card:hover {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
- 
-.card-container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-}
-
-#consent {
-   /* make checkbox size 50% larger than the default */
-   transform: scale(1.5);
-   margin-left: 0.2rem;
-}
-
-.form-text {
-   padding: 0.8rem;
-   /* margin-top: 0.5rem; */
-   vertical-align: middle;
-   text-align: left;
-   width: 50%;
-}
-
-label {
-   margin-right: 1rem;
-   margin-bottom: 1rem;
-   text-align: right;
-   width: 128px;
-}
-
-#consent-label {
-   padding: 0.5rem 0.5rem 0.5rem 1rem;
-   margin: 0;
-   text-align: left;
-   align-items: center;
-   justify-content: left;
-   width: fit-content;
-}
-
-#empty {
-   margin: 0;
-   padding: 0;
-   margin-right: 12px;
-}
-
-.form-group {
-   padding: 0.5rem;
-   display: flex;
-   width: 100%;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-content: center;
-   justify-items: right;
-}
-
-#form-p-type {
-   padding: 0.8rem;
-}
-
-#attachment {
-   padding: 0.8rem;
-}
-
-input {
-   border-radius: 5px;
-   border: 1px solid black;
-   border-style: solid;
-   padding: 0.8rem;
-}
-
-#utor-email {
-   padding: 0.5rem;
-   font-family: "Times New Roman", Times, serif;
-   color: black;
-   text-align: center;
-   margin: 0;
-   text-decoration: underline;
-}
-
-#send-button {
-   align-items: center;
-}
-
-h5 {
-   padding-bottom: 0.5rem;
-}
-
-@media only screen and (max-width: 390px) {
-   #project-cards {
-      flex-direction: column;
-      gap: 1.5rem;
-   }
-
-   .card {
-      width: 100%;
-   }
+h3 {
+   margin-bottom: 0.5rem;
+   font-weight: 200;
 }

@@ -33,22 +33,56 @@
 
                <div class="catalogue">
                   <div class="music-item left">
-                      <img src="/images/album1.svg" alt="Album 3">
+                      <img src="album3.jpg" alt="Album 3">
                       <h3>Song Title 3</h3>
+                      <audio src="song3.mp3" class="audio"></audio>
+                      <div class="progress-container">
+                        <!-- <span class="time-passed">0:00</span> -->
+                        <input type="range" class="progress-bar" value="0" step="1">
+                        <!-- <span class="time-remaining">0:00</span> -->
+                      </div>
+                      <div class="controls">
+                        <button class="prev-btn" onclick="prevSong()">&#8249;</button>
+                        <button class="play-pause-btn" onclick="togglePlayPause(this)">
+                            <img src="play_icon.svg" alt="Play">
+                        </button>
+                        <button class="next-btn" onclick="nextSong()">&#8250;</button>
+                    </div>
                   </div>
                   <div class="music-item center">
-                      <img src="/images/album1.svg" alt="Song 1" width="50px" height="50px">
+                      <img src="album1.jpg" alt="Album 1">
                       <h3>Song Title 1</h3>
+                      <audio src="song1.mp3" class="audio"></audio>
+                      <div class="progress-container">
+                        <!-- <span class="time-passed">0:00</span> -->
+                        <input type="range" class="progress-bar" value="0" step="1">
+                        <!-- <span class="time-remaining">0:00</span> -->
+                      </div>
+                      <div class="controls">
+                        <button class="prev-btn" onclick="prevSong()">&#8249;</button>
+                        <button class="play-pause-btn" onclick="togglePlayPause(this)">
+                            <img src="play_icon.svg" alt="Play">
+                        </button>
+                        <button class="next-btn" onclick="nextSong()">&#8250;</button>
+                    </div>
                   </div>
                   <div class="music-item right">
-                      <img src="/images/album1.svg" alt="Album 2">
+                      <img src="album2.jpg" alt="Album 2">
                       <h3>Song Title 2</h3>
+                      <audio src="song2.mp3" class="audio"></audio>
+                      <div class="progress-container">
+                        <!-- <span class="time-passed">0:00</span> -->
+                        <input type="range" class="progress-bar" value="0" step="1">
+                        <!-- <span class="time-remaining">0:00</span> -->
+                      </div>
+                      <div class="controls">
+                        <button class="prev-btn" onclick="prevSong()">&#8249;</button>
+                        <button class="play-pause-btn" onclick="togglePlayPause(this)">
+                            <img src="play_icon.svg" alt="Play">
+                        </button>
+                        <button class="next-btn" onclick="nextSong()">&#8250;</button>
+                    </div>
                   </div>
-              </div>
-          
-              <div class="controls">
-                  <button onclick="prevSong()">Previous</button>
-                  <button onclick="nextSong()">Next</button>
               </div>
           
               <script src="script.js"></script>

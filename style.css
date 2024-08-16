@@ -203,8 +203,9 @@ h3 {
    display: flex;
    justify-content: center;
    position: relative;
-   width: 600px;
-   height: 300px;
+   width: 100%;
+   /* width: 600px; */
+   /* height: 300px; */
    perspective: 1000px;
 }
 
@@ -214,7 +215,7 @@ h3 {
    height: 300px;
    transition: transform 0.5s ease, opacity 0.5s ease;
    text-align: center;
-   background-color: white;
+   background-color: #d6d6d6;
    border-radius: 10px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    overflow: hidden;
@@ -222,14 +223,56 @@ h3 {
 }
 
 .music-item img {
-   width: 100%;
+   width: 85%;
    height: 200px;
+   background-color: transparent;
 }
 
 .music-item h3 {
+   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
    margin: 15px 0;
    font-size: 18px;
-   color: #333;
+   color: black;
+   background-color: white; */
+   display: none;
+}
+
+.progress-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 10px;
+   width: 100%;
+   background-color: transparent;
+}
+
+/* .time-passed, .time-remaining {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   color: black;
+   background-color: #d6d6d6;
+   width: 40px; 
+   text-align: center;
+} */
+
+.progress-bar {
+   -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+   appearance: none; /* Remove default styling for other browsers */
+   background-color: #000000; /* Black background */
+   height: 4px; /* Height of the progress bar */
+   border-radius: 4px; /* Rounded corners */
+   flex-grow: 1;
+   margin: 0 15px; 
+}
+/* Style for WebKit browsers */
+.progress-bar::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Remove default styling */
+   appearance: none; /* Remove default styling */
+   width: 10px; /* Width of the thumb */
+   height: 10px; /* Height of the thumb */
+   background-color: #000000; /* Color of the thumb */
+   border-radius: 50%; /* Make it round */
+   cursor: pointer; /* Pointer cursor on hover */
 }
 
 .music-item.left {
@@ -249,12 +292,29 @@ h3 {
 }
 
 .controls {
+   /* margin-top: 20px; */
+   background-color: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    margin-top: 20px;
 }
 
-.controls button {
-   padding: 10px 20px;
-   font-size: 16px;
-   margin: 0 10px;
+.play-pause-btn, .prev-btn, .next-btn {
+   background: none;
+   border: none;
    cursor: pointer;
+   margin: 0 10px;
+}
+
+.play-pause-btn img, .prev-btn img, .next-btn img {
+   width: 48px;
+   height: 48px;
+   background-color: transparent;
+}
+
+.prev-btn, .next-btn {
+   margin-bottom: 5px;
+   font-size: 36px;
+   color: black;
 }

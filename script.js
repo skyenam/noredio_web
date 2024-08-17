@@ -10,12 +10,12 @@ function toggleAnswer(element) {
 
 // script.js
 let songs = [
-    { title: "christmas carol", img: "images/album1.svg", audio: "audios/christmas_carol.m4a" },
-    { title: "country guitar", img: "images/album1.svg", audio: "audios/country_guitar.m4a" },
-    { title: "dubstep", img: "images/album1.svg", audio: "audios/dubstep.m4a" },
-    { title: "lofi", img: "images/album1.svg", audio: "audios/lofi.m4a" },
-    { title: "rock blues", img: "images/album1.svg", audio: "audios/rock_blues.m4a" },
-    { title: "techno", img: "images/album1.svg", audio: "audios/techno.m4a" }
+    { title: "christmas carol", img: "images/album1.png", audio: "audios/christmas_carol.m4a" },
+    { title: "country guitar", img: "images/album2.png", audio: "audios/country_guitar.m4a" },
+    { title: "dubstep", img: "images/album3.png", audio: "audios/dubstep.m4a" },
+    { title: "lofi", img: "images/album4.png", audio: "audios/lofi.m4a" },
+    { title: "rock blues", img: "images/album5.png", audio: "audios/rock_blues.m4a" },
+    { title: "techno", img: "images/album6.png", audio: "audios/techno.m4a" }
 ];
 
 let currentIndex = 0;
